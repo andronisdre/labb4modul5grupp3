@@ -15,8 +15,15 @@ public class Main {
                     keepRunning = false;
                 } else if (val == 2) {
                     System.out.println("you chose librarian");
-                    librarian.librarianChoices();
-                    keepRunning = false;
+                    System.out.println("write the password");
+                    int password = input.nextInt();
+                    if (password == 2845) {
+                        System.out.println("password was correct");
+                        librarian.librarianChoices();
+                        keepRunning = false;
+                    } else
+                        System.out.println("wrong password");
+                    System.out.println("choose val 1 or 2 for user or librarian");
                 } else {
                     System.out.println("pick 1 or 2");
                 }
