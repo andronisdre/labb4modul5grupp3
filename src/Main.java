@@ -9,9 +9,11 @@ public class Main {
         do {
             try {
                 int val = input.nextInt();
-                input.nextLine();
-                if (val >= 1 && val <= 2) {
-                    System.out.println("you chose user or librarian");
+                //input.nextLine();
+                if (val == 1) {
+                    System.out.println("you chose user");
+                } else if (val == 2) {
+                    System.out.println("you chose librarian");
                 } else {
                     System.out.println("pick 1 or 2");
                 }
