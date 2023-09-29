@@ -9,7 +9,6 @@ public class Main {
         do {
             try {
                 int val = input.nextInt();
-                //input.nextLine();
                 if (val == 1) {
                     System.out.println("you chose user");
                     user.userChoices();
