@@ -12,8 +12,12 @@ public class Main {
                 //input.nextLine();
                 if (val == 1) {
                     System.out.println("you chose user");
+                    user.userChoices();
+                    keepRunning = false;
                 } else if (val == 2) {
                     System.out.println("you chose librarian");
+                    librarian.librarianChoices();
+                    keepRunning = false;
                 } else {
                     System.out.println("pick 1 or 2");
                 }
