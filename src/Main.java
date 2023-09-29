@@ -10,18 +10,15 @@ public class Main {
             try {
                 int val = input.nextInt();
                 input.nextLine();
-                if (val == 1) {
-                    System.out.println("you chose user");
-                    keepRunning = false;
-                } else if (val == 2) {
-                    System.out.println("you chose librarian");
-                    keepRunning = false;
-                } else System.out.println("pick 1 or 2");
-
+                if (val >= 1 && val <= 2) {
+                    System.out.println("you chose user or librarian");
+                } else {
+                    System.out.println("pick 1 or 2");
+                }
             } catch (InputMismatchException e) {
                 System.out.println("you need to write an integer, 1 or 2");
+                input.nextLine();
             }
-
         } while (keepRunning);
     }
 }
