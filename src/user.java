@@ -8,21 +8,10 @@ public class user {
         while (keepGoing) {
             int valUser = inputOf.nextInt();
             switch (valUser) {
-            case 1:
-                System.out.println("val 1 user");
-                keepGoing = false;
-                break;
-            case 2:
-                System.out.println("val 2 user");
-                keepGoing = false;
-                break;
-            case 3:
-                System.out.println("val 3 user");
-                keepGoing = false;
-                break;
-            default:
-                System.out.println("put in 1, 2 or 3");
-                inputOf.nextLine();
+            case 1 -> {System.out.println("val 1 user"); keepGoing = false;}
+            case 2 -> {System.out.println("val 2 user"); keepGoing = false;}
+            case 3 -> {System.out.println("val 3 user"); keepGoing = false;}
+            default -> {System.out.println("put in 1, 2 or 3"); inputOf.nextLine();}
             }
         }
     }
