@@ -21,14 +21,16 @@ public class Main {
                         System.out.println("password was correct");
                         librarian.librarianChoices();
                         keepRunning = false;
-                    } else
+                    } else {
                         System.out.println("wrong password");
-                    System.out.println("choose val 1 or 2 for user or librarian");
+                        System.out.println("choose val 1 or 2 for user or librarian");
+                    }
                 } else {
                     System.out.println("pick 1 or 2");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("you need to write an integer, 1 or 2");
+                System.out.println("you need to write an integer");
+                System.out.println("please choose between user and librarian again");
                 input.nextLine();
             }
         } while (keepRunning);
