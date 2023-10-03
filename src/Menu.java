@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
-    public Scanner input = new Scanner(System.in);
+    public static Scanner input = new Scanner(System.in);
 
     public Menu() {
         mainMenu();
