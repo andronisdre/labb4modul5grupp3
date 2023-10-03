@@ -2,15 +2,14 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
-    private Scanner input = new Scanner(System.in);
-    private boolean isRunning = true;
+    public Scanner input = new Scanner(System.in);
 
     public Menu() {
         mainMenu();
     }
 
     public void mainMenu() {
-        Scanner input = new Scanner(System.in);
+        //Scanner input = new Scanner(System.in);
         System.out.println("welcome to the library, choose 1 for user or 2 for librarian");
         boolean keepRunning = true;
         do {
@@ -28,9 +27,9 @@ public class Menu {
                         System.out.println("password was correct");
                         librarian.librarianChoices();
                         keepRunning = false;
-                    } else
-                        System.out.println("wrong password");
-                    System.out.println("choose val 1 or 2 for user or librarian");
+                    } else { System.out.println("wrong password");
+                        System.out.println("choose val 1 or 2 for user or librarian");
+                    }
                 } else {
                     System.out.println("pick 1 or 2");
                 }
