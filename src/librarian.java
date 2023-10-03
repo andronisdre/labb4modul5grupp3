@@ -8,21 +8,10 @@ public class librarian {
         while (keepGoing) {
             int valLibrarian = inputOf.nextInt();
             switch (valLibrarian) {
-                case 1:
-                    System.out.println("val 1 librarian");
-                    keepGoing = false;
-                    break;
-                case 2:
-                    System.out.println("val 2 librarian");
-                    keepGoing = false;
-                    break;
-                case 3:
-                    System.out.println("val 3 librarian");
-                    keepGoing = false;
-                    break;
-                default:
-                    System.out.println("put in 1, 2 or 3");
-                    inputOf.nextLine();
+                case 1 -> {System.out.println("val 1 librarian"); keepGoing = false;}
+                case 2 -> {System.out.println("val 2 librarian"); keepGoing = false;}
+                case 3 -> {System.out.println("val 3 librarian"); keepGoing = false;}
+                default -> {System.out.println("put in 1, 2 or 3"); inputOf.nextLine();}
             }
         }
     }
